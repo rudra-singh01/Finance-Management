@@ -1,6 +1,6 @@
 "use client"
 import React from 'react'
-import { LayoutDashboard, Wallet, CreditCard, ArrowUpCircle } from 'lucide-react'
+import { LayoutDashboard, Wallet, CreditCard } from 'lucide-react'
 import { UserButton } from '@clerk/nextjs'
 import { usePathname, useRouter } from 'next/navigation'
 
@@ -10,7 +10,6 @@ const SideNav = () => {
       { name: 'Dashboard', link: '/dashboard', icon: LayoutDashboard },
       { name: 'Budget', link: '/dashboard/budget', icon: Wallet },
       { name: 'Expense', link: '/dashboard/expense', icon: CreditCard },
-      { name: 'Upgrade', link: '/dashboard/upgrade', icon: ArrowUpCircle },
     ]
     const path = usePathname()
     
